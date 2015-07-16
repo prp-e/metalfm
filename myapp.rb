@@ -18,6 +18,15 @@ end
 get '/bands' do
 end
 
+get '/artists' do
+end
+
+get '/albums' do
+end
+
+get '/genres' do
+end
+
 not_found do 
 	status 404
 	 'Not Found!'
