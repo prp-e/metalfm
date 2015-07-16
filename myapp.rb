@@ -5,7 +5,8 @@ require 'json/ext'
 
 assets do
  css :application, [
-	'/css/stylesheet.css'
+	'/css/stylesheet.css',
+	'/css/genres.css'
  ]
  css_compression :sass
 end
@@ -25,6 +26,10 @@ get '/albums' do
 end
 
 get '/genres' do
+	erb :genres
+end
+
+get '/genres/heavy' do
 end
 
 not_found do 
