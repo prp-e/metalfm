@@ -13,11 +13,13 @@ end
 get '/' do
 
  erb :index
-
-
 end
+
+get '/bands' do
+end
+
 not_found do 
 	status 404
-	'Not Found!'
+	 'Not Found!'
 end
 
